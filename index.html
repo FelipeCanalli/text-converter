@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Texto</title>
+    <link rel="stylesheet" href="./styles/estilos.css" />
+    <script src="./js/script1.js"></script>
+  </head>
+  <body>
+    <div style="display: inline-flex;">
+      <label for="entrada">Entrada de dados:</label>
+      <textarea oninput="contador()" id="entrada" cols="30" rows="5"></textarea>
+      <label for="saida">Saída de dados:</label>
+      <textarea id="saida" cols="30" rows="5"></textarea>
+    </div>
+    <div id="contador"></div>
+
+    <div id="caixabtn">
+      <button onclick="upperCase()">MAISCULO</button>
+      <button onclick="lowerCase()">minúsculo</button>
+      <button>Teste</button>
+    </div>
+  </body>
+  <script>
+    window.onload = contador();
+  </script>
+</html>
