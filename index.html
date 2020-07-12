@@ -8,18 +8,30 @@
     <script src="./js/script1.js"></script>
   </head>
   <body>
-    <div style="display: inline-flex;">
-      <label for="entrada">Entrada de dados:</label>
-      <textarea oninput="contador()" id="entrada" cols="30" rows="5"></textarea>
-      <label for="saida">Saída de dados:</label>
-      <textarea id="saida" cols="30" rows="5"></textarea>
+    <div id="container">
+      <div id="caixa-texto">
+        <label for="entrada">Entrada de dados:</label>
+        <textarea
+          oninput="contador()"
+          id="entrada"
+          cols="70"
+          rows="5"
+          placeholder="Digite ou cole seu texto aqui"
+        ></textarea>
+      </div>
+      <div id="caixa-texto">
+        <label for="saida">Saída de dados:</label>
+        <textarea id="saida" cols="70" rows="5"> </textarea>
+      </div>
     </div>
     <div id="contador"></div>
 
     <div id="caixabtn">
-      <button onclick="upperCase()">MAISCULO</button>
-      <button onclick="lowerCase()">minúsculo</button>
-      <button>Teste</button>
+      <button onclick="upperCase()">Maiúsculo</button>
+      <button onclick="lowerCase()">Minúsculo</button>
+      <button onclick="capitalizeFisrtLetter()">
+        Primeira letra maiúscula
+      </button>
     </div>
   </body>
   <script>
